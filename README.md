@@ -13,13 +13,21 @@ The Database Schema looks like this:
 + status
 + price
 
-#Category (Type) > eg.: shoes, laptops, TVs, etc
+#Category > eg.: shoes, laptops, TVs, etc
 =========================================
 + id (PRIMARY)
 + name
 + slug
- 
-#ProductAttributes (main) > eg.: color, diagonal, material
+
+
+#CategoryLists > eg.: business shoes, loafers, etc
+=========================================
++ id (PRIMARY)
++ category_id
++ name
++ slug
+
+#ProductAttributes > eg.: color, material
 =========================================
 + id (PRIMARY)
 + product_id
